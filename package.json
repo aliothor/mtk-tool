@@ -1,0 +1,30 @@
+{
+  "name": "mtk-tool",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "maptalks web worker 静态编译工具",
+  "keywords": ["web worker","compile","maptalks"],
+  "bin": {
+    "mtk-tool": "./bin/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "pnpm exec mtk-tool compile -i test/worker-source -o test/mtk-worker"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.5.6",
+    "colorin": "^0.6.0",
+    "esno": "^0.17.0"
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-swc": "^0.1.1",
+    "rollup": "^3.28.1",
+    "tslib": "^2.6.2",
+    "commander": "^11.0.0",
+    "typescript": "^5.2.2"
+  }
+}
