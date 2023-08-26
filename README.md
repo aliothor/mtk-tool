@@ -21,3 +21,4 @@ pnpm exec mtk-tool compile -i test/worker-source -o test/mtk-worker
 #### RoadMap
 - 增加快速创建maptalks插件功能
 - 改写为vite或rollup插件
+- 实现github actions自动发布到npm

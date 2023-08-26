@@ -11,8 +11,15 @@
     "build": "tsc",
     "test": "pnpm exec mtk-tool compile -i test/worker-source -o test/mtk-worker"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "author": {
+    "name": "pluto369",
+    "email": "1811783973@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aliothor/mtk-tool.git"
+  },
   "devDependencies": {
     "@types/node": "^20.5.6",
     "colorin": "^0.6.0",
