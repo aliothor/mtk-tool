@@ -1,11 +1,11 @@
-# maptalks web worker 静态编译工具
+# Maptalks Web Worker 静态编译工具
 
-#### 安装
+## 📘 安装
 ```bash
 pnpm install mtk-tool
 ```
 
-#### 使用示例
+## Ⓜ️ 使用示例
 
 ```bash
 // 打印cli使用帮助
@@ -15,10 +15,10 @@ pnpm exec mtk-tool -h
 pnpm exec mtk-tool compile -i test/worker-source -o test/mtk-worker
 ```
 
-#### Feature
-- 支持使用typescript编写web worker
+## 💎 特性
+- 支持使用TypeScript编写Web Worker
 
-#### RoadMap
-- 增加快速创建maptalks插件功能
-- 改写为vite或rollup插件
-- 实现github actions自动发布到npm
+## 🎢 计划
+- 增加快速创建Maptalks插件功能
+- 改写为Vite或Rollup插件
+- 实现Github Actions自动发布到npm

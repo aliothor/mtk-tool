@@ -1,5 +1,6 @@
-import { isAbsolute, dirname, join, basename } from 'node:path'
+import { join, basename } from 'node:path'
 import { readdir, mkdir, stat, readFile, writeFile, rm } from 'node:fs/promises'
+
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import swc from '@rollup/plugin-swc'
 import commonjs from '@rollup/plugin-commonjs'
