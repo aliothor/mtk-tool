@@ -1,6 +1,6 @@
 {
   "name": "mtk-tool",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "description": "maptalks web worker 静态编译工具",
   "keywords": [
@@ -9,7 +9,7 @@
     "maptalks"
   ],
   "bin": {
-    "mtk-tool": "./bin/index.js"
+    "mtk-tool": "bin/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:aliothor/mtk-tool.git"
+    "url": "git+ssh://git@github.com/aliothor/mtk-tool.git"
   },
   "devDependencies": {
     "@types/node": "^20.8.6",
