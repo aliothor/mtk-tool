@@ -1,17 +1,17 @@
 import { join, basename } from 'node:path'
-import { readdir, mkdir, stat, readFile, writeFile, rm } from 'node:fs/promises'
+import { readdir, mkdir, stat, readFile, writeFile } from 'node:fs/promises'
 
-import { nodeResolve } from '@rollup/plugin-node-resolve'
 import swc from '@rollup/plugin-swc'
 import commonjs from '@rollup/plugin-commonjs'
 import { rollup, OutputOptions, RollupBuild } from 'rollup'
+import { nodeResolve } from '@rollup/plugin-node-resolve'
 
 const currentPath = process.cwd()
 const testInputDir = 'test/worker-source'
 const testOutputDir = 'test/mtk-worker'
 
 /**
- * 运行命令
+ * 执行编译命令
  * @param inputDir
  * @param outputDir
  * @returns

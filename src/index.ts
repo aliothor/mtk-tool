@@ -1,7 +1,7 @@
 import { program } from 'commander'
 import { runCommand } from './util'
 
-program.name('mtk-tool').description('用与开发maptalks应用或插件的cli工具').version('0.0.1')
+program.name('mtk-tool').description('用与开发maptalks应用或插件的cli工具').version('1.0.0')
 
 program
   .command('compile')
@@ -10,13 +10,18 @@ program
   .option('-o,--output <string>', '编译后的worker文件目录', 'mtk-worker')
   .action(runCompile)
 
-async function runCompile(options:any) {
+/**
+ * 开始编译
+ * @param options 
+ */
+async function runCompile(options: any) {
   try {
     await runCommand(options.input, options.output)
-    // console.log(options);
   } catch (error) {
     console.error(error)
   }
 }
 
-program.parseAsync(process.argv)
+program.parseAsync(process.argv).catch(error => {
+  console.error(error);
+})
