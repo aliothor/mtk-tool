@@ -1,6 +1,6 @@
 {
   "name": "mtk-tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "maptalks web worker 静态编译工具",
   "keywords": [
